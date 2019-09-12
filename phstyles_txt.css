@@ -1,3 +1,23 @@
+@charset "utf-8"
+@font-face{
+   font-family:champagne;
+   src:url(cac_champagne.ttf) format('ttf'),
+       url(cac_champagne.woff) format('woff'), 
+       url(cac_champagne.woff2) format('woff2');
+}
+@font-face{
+   font-family: grunge;
+   src:url(1942.ttf) format('ttf'),
+       url(1942.woff) format('woff'),
+       url(1942.woff2) format('woff2');
+}
+@font-face{
+   font-family: dobkinplain;
+   src:url(DobkinPlain.ttf) format('ttf'),
+         url(DobkinPlain.woff) format('woff'),
+      url(DobkinPlain.woff2) format('woff2');
+
+}
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 2
@@ -13,19 +33,86 @@
 
 
 /* Structural Styles */
-
-
-
-
+p{
+   margin: 0px; 
+   padding-top: 5px;
+   padding-right: 25px;
+   padding-left: 25px;
+   padding-bottom: 25px;
+}
+body > p{
+   font-size:1.1em; 
+   text-align: center;
+}
+html{
+   background-color: hsl(91,8%,56%);
+}
+body{
+   background-color: hsl(58,31%,84%);
+   font-family: 'Palatino Linotype', 'Book Antiqua', 'palatino serif';
+}
+header{
+   background-color: black;
+}
+address{
+   font-style: normal;
+   font-size:0.9em;
+   text-align: center;
+   padding-bottom: 10px;
+   padding-top: 10px;
+}
 /* Navigation Styles */
-
+nav a:hover, nav a:active{
+   color: hsla(0,0%,100%,0.7);
+   background-color: hsla(0, 0%, 42%, 0.7);
+}
+nav a{
+font-family: 'Trebuchet MS', 'helvetica', 'sans-serif',;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+nav{
+   color:white;
+   text-decoration: none;
+   background-color: hsla(0,0%,42,0.4);
+}
 
 
 
 /* Section Styles */
-
-
-
-
+section#play1{
+   background-color:hsl(240,100%,88%);
+   font-family: champagne, cursive;
+}
+section.playbill h1{
+   font-size: 3em;
+   font-weight: normal;
+   margin: 0px;
+   padding-top: 20px;
+   padding-right: 0px;
+   padding-left: 20px;
+   padding-bottom: 10px;
+}
+section#play2{
+background-color: hsl(25,88%,73%);
+font-family: Grunge, 'Times New Roman', Times, serif;
+}
+section#play3{
+   background-color: hsl(0,100%,75%);
+   font-family: impact, charcoal, sans-serif;
+}
+section#play4{
+   background-color: hsl(296,86%,86%);
+   font-family: dobkin, cursive;
+}
 /* Description List Styles */
-
+dt{
+   font-size: 1.3em;
+   font-weight: bold;
+   color: hsla(0,0%,0.4);
+}
+dd{
+   font-size: 1.3em;
+   margin-left: 0px;
+   margin-bottom: 10px
+}
